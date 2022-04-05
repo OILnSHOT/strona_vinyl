@@ -1,0 +1,67 @@
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("photo/tapeta_vinyl.jpg");
+  background-size: cover;
+}
+.info__baner {
+  margin-top: 10vh;
+  margin-bottom: 1vh;
+  font-size: 50px;
+  color: #f0f0f0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.info__about {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 3em;
+  text-align: justify;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.copyright {
+  display: none;
+  align-items: center;
+  color: #f0f0f0;
+  justify-content: center;
+  background-color: #5e5e5e;
+}
+
+@media screen and (max-width: 1000px) {
+  .info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("photo/tapeta_vinyl.jpg");
+    background-size: cover;
+  }
+  .info__baner {
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    font-size: 35px;
+    color: #f0f0f0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .info__about {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 2em;
+    text-align: justify;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+}/*# sourceMappingURL=style.css.map */

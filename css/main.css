@@ -1,0 +1,129 @@
+.main {
+  display: flex;
+  background: url("photo/vinyl.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__baner {
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #111111;
+}
+.products__baner {
+  margin-top: 5%;
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.products__box {
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.products__preview {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: left;
+  padding-left: 2em;
+}
+.products__vinyl {
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.products__photo {
+  margin: 0;
+}
+.products__text {
+  margin-left: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products__link {
+  color: #f0f0f0;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.products__link:hover {
+  color: #a7a7a7;
+}
+
+@media screen and (max-width: 1800px) {
+  .main {
+    min-height: 100vh;
+  }
+  .main__baner {
+    font-size: 30px;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #111111;
+  }
+  .products__baner {
+    color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .products__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .products__preview {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .products__vinyl {
+    color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
+  .products__photo {
+    width: 90%;
+  }
+  .products__text {
+    padding: 0;
+    margin-right: 3em;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .products__link {
+    color: #f0f0f0;
+    padding-left: 1em;
+    text-decoration: none;
+    display: none;
+  }
+} /*# sourceMappingURL=main.css.map */

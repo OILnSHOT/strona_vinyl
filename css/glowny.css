@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(94, 94, 94, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-family: "Poppins", sans-serif;
+  z-index: 99;
+}
+.menu__baner {
+  color: #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.menu__options {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.menu__nav {
+  list-style: none;
+}
+.menu__link {
+  color: #f0f0f0;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.menu__link:hover {
+  color: #c7c7c7;
+}
+.menu__burger {
+  display: none;
+  cursor: pointer;
+}
+.menu__layer {
+  width: 30px;
+  height: 3px;
+  background-color: #f0f0f0;
+  margin: 5px 0;
+}
+
+.footer {
+  font-weight: 600;
+  font-size: 20px;
+  height: 350px;
+  width: 100%;
+  background-color: #5e5e5e;
+  display: grid;
+  color: #f0f0f0;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Poppins", sans-serif;
+}
+.footer__box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 46px;
+}
+.footer__box--one {
+  margin-left: 40px;
+}
+.footer__box--two {
+  margin-left: 53px;
+}
+.footer__box--three {
+  margin-left: 72px;
+}
+.footer__option {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.copyright {
+  display: none;
+  align-items: center;
+  color: #f0f0f0;
+  justify-content: center;
+  background-color: #5e5e5e;
+}
+
+@media screen and (max-width: 900px) {
+  .menu__options {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: #5e5e5e;
+    display: flex;
+    transform: translateX(100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s transform;
+    opacity: 0;
+    z-index: 9999;
+  }
+  .menu__burger {
+    display: block;
+  }
+  .menu__layer {
+    width: 30px;
+    height: 3px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    justify-content: center;
+    background-color: #5e5e5e;
+  }
+
+  .footer {
+    display: none;
+  }
+} /*# sourceMappingURL=glowny.css.map */
